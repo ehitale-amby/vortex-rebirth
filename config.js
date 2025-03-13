@@ -22,11 +22,11 @@ global.userImages =
 ///===========[global iMPORTS]====================//
 
 module.exports = {
-  menu: process.env.MENU || "",
+  menu: process.env.MENU || "2",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
-  VERSION: process.env.VERSION || "1.0.0",
-  caption: process.env.CAPTION || "`VRT`",
+  VERSION: process.env.VERSION || "1.1.0",
+  caption: process.env.CAPTION || "`𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙`",
   author: process.env.PACK_AUTHER || "𝐕𝐑𝐓",
   packname: process.env.PACK_NAME || "MX-GΔMΞCØDΞR",
   botname: process.env.BOT_NAME || "𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙",
