@@ -12,6 +12,125 @@ const { performance } = require("perf_hooks");
 const Config = require("../config");
 const cheerio = require("cheerio");
 
+smd(
+  {
+    cmdname: "caption",
+    alias: ["setcaption"],
+    desc: "Set caption for replied media message.",
+    category: "misc",
+    filename: __filename,
+  },
+  async (message, args) => {
+    try {
+      if (!message.reply_message || !args) {
+        return await message.reply(
+          !message.reply_message
+            ? "🤡 *You’re dumber than I thought.* _Reply to a message with a caption & filename!_"
+            : "😒 *What kind of empty brain request is this?* _Provide text to set the caption!_"
+        );
+      }
+
+      const mediaTypes = ["image", "video", "document"];
+      const msgType = message.reply_message.mtype;
+
+      if (!mediaTypes.some((type) => msgType.includes(type))) {
+        return await message.reply(
+          "📵 *Listen here, genius...* _Reply to an image, video, or document message._"
+        );
+      }
+
+      let [caption, fileName] = args.split("|").map((x) => x?.trim() || "null");
+
+      if (!caption) {
+        return await message.reply(
+          "💀 *You forgot to add a caption.* Try again, brainiac."
+        );
+      }
+
+      if (msgType.includes("document") && fileName === "null") {
+        return await message.reply(
+          "📄 *You wanna rename a document but forgot the name?* _Try again, fool._"
+        );
+      }
+
+      message.reply_message.message[msgType].caption = caption;
+      message.reply_message.message[msgType].fileName = fileName;
+
+      await message.bot.copyNForward(message.chat, message.reply_message);
+
+      let randomBranding = [
+        "*Powered by Vortex Rebirth™* 💀",
+        "*⚡ Vortex Rebirth at its finest ⚡*",
+        "*🔥 Bow before Vortex Rebirth 🔥*",
+      ];
+      await message.reply(randomBranding[Math.floor(Math.random() * randomBranding.length)]);
+    } catch (error) {
+      console.error("❌ ERROR:", error);
+      await message.error(error + "\n\ncommand: caption", error);
+    }
+  }
+);
+
+smd(
+  {
+    cmdname: "document",
+    alias: ["senddoc", "todoc"],
+    desc: "Convert replied image/video into a document.",
+    category: "misc",
+    filename: __filename,
+  },
+  async (message, args) => {
+    try {
+      let media =
+        message.image || message.video
+          ? message
+          : message.reply_message && (message.reply_message.image || message.reply_message.video)
+          ? message.reply_message
+          : false;
+
+      if (!media) {
+        return await message.reply(
+          "🤡 *Are you blind?* _Reply to an image/video message first!_"
+        );
+      }
+
+      if (!args) {
+        return await message.reply(
+          "📄 *You forgot something...* _Provide a filename!_\n\n*Example:* `document themx | caption`"
+        );
+      }
+
+      let savedMedia = await message.bot.downloadAndSaveMediaMessage(media);
+      if (!savedMedia) {
+        return await message.reply("❌ *Download failed!* _Try again, clown._");
+      }
+
+      let separator = args.includes(":") ? ":" : args.includes(";") ? ";" : "|";
+      let [fileName, caption] = args.split(separator).map((x) => x?.trim() || "");
+      fileName = (fileName || "file") + (media.image ? ".jpg" : ".mp4");
+      caption = ["copy", "default", "old", "reply"].includes(caption) ? media.text : caption;
+
+      await message.bot.sendMessage(message.chat, {
+        document: { url: savedMedia },
+        mimetype: media.mimetype,
+        fileName: fileName,
+        caption: caption,
+      });
+
+      let randomBranding = [
+        "*📂 Converted with Vortex Rebirth™* 💀",
+        "*⚡ Document Mode: Activated ⚡*",
+        "*🔥 Bow before Vortex Rebirth 🔥*",
+      ];
+      await message.reply(randomBranding[Math.floor(Math.random() * randomBranding.length)]);
+    } catch (error) {
+      console.error("❌ ERROR:", error);
+      await message.error(error + "\n\ncommand: document", error);
+    }
+  }
+);
+
+
 /*vrt*/
 smd({
   cmdname: "feature",
@@ -250,3 +369,175 @@ const 𝙧𝙚𝙨𝙥𝙤𝙣𝙨𝙚𝙈𝙚𝙨𝙨𝙖𝙜𝙚 = `👀 𝘾�
 
 𝙘𝙩𝙭.send(𝙧𝙚𝙨𝙥𝙤𝙣𝙨𝙚𝙈𝙚𝙨𝙨𝙖𝙜𝙚, { mentions: [𝙩𝙖𝙧𝙜𝙚𝙩𝙐𝙨𝙚𝙧] }, "vrt", 𝙘𝙩𝙭);
 });
+
+let tmpUrl = "https://telegra.ph/file/b8e96b599e0fa54d25940.jpg";
+const secmailData = {};
+smd(
+  {
+    pattern: "tempmail",
+    alias: ["tmpmail", "newmail", "tempemail"],
+    info: "Generate a temporary email address. Use it wisely... or foolishly. 😈",
+    type: "tools",
+  },
+  async (message) => {
+    try {
+      if (!secmailData[message.sender]) {
+        const generatedMail = await tempmail.create();
+        if (!generatedMail || !generatedMail[0]) {
+          return await message.reply("❌ *Request Denied!* _Try again, fool._");
+        }
+        const [login, domain] = generatedMail[0].split("@");
+        secmailData[message.sender] = { email: generatedMail[0], login, domain };
+      }
+
+      let tempmailLogo = false;
+      try {
+        tempmailLogo = await smdBuffer(tmpUrl);
+      } catch (error) {}
+
+      const tempMailMessage = `
+      *📩 TEMPORARY EMAIL INFO*  
+        
+      📧 *EMAIL:* ➪ ${secmailData[message.sender].email}  
+      🔑 *Login:* ➪ ${secmailData[message.sender].login}  
+      🌐 *Domain:* ➪ ${secmailData[message.sender].domain}  
+      
+      ⚡ *Commands:*  
+      🔄 _${prefix}checkmail_ ➪ Get latest emails  
+      🗑 _${prefix}delmail_ ➪ Delete current email  
+      
+      ${Config.caption}
+      `.trim();
+
+      await message.reply(tempMailMessage, {
+        contextInfo: {
+          ...(await message.bot.contextInfo("TEMPMAIL", message.senderName, tempmailLogo)),
+        },
+      });
+    } catch (error) {
+      console.error("❌ ERROR:", error);
+      await message.reply("💀 *Something broke.* _Not my problem._");
+    }
+  }
+);
+
+smd(
+  {
+    pattern: "checkmail",
+    alias: ["readmail", "reademail"],
+    type: "tools",
+    info: "🔍 Check your damn temp email... if you have one. 😏",
+  },
+  async (message) => {
+    try {
+      const user = message.sender;
+      const userEmail = secmailData[user];
+
+      if (!userEmail || !userEmail.email) {
+        return await message.reply(
+          `❌ *You don’t even have a temporary email, clown!* 🤡  
+          📨 _Use_ *${prefix}tempmail* _to create one first!_`
+        );
+      }
+
+      const emails = await tempmail.mails(userEmail.login, userEmail.domain);
+      if (!emails || !emails[0] || emails.length === 0) {
+        return await message.reply(
+          `📭 *EMPTY INBOX!*  
+          _No one cares about you... No emails received yet._ 😹  
+          💀 *Use* _${prefix}delmail_ *to delete your useless mail!*`
+        );
+      }
+
+      let toxicLogo = false;
+      try {
+        toxicLogo = await smdBuffer(tmpUrl);
+      } catch (error) {}
+
+      for (const mail of emails) {
+        const emailContent = await tempmail.emailContent(
+          userEmail.login,
+          userEmail.domain,
+          mail.id
+        );
+
+        console.log({ emailContent });
+
+        if (emailContent) {
+          const emailMessage = `
+          💀 *NEW EMAIL ARRIVED* 💀  
+          📩 *From:* ➪ ${mail.from}  
+          📅 *Date:* ➪ ${mail.date}  
+          🆔 *EMAIL ID:* ➪ [${mail.id}]  
+          📜 *Subject:* ➪ ${mail.subject}  
+          📖 *Content:* ➪ ${emailContent}  
+
+          ⚡ *Feeling brave? Reply or delete it.*  
+          `.trim();
+
+          await message.reply(emailMessage, {
+            contextInfo: {
+              ...(await message.bot.contextInfo(
+                `📩 *EMAIL ➪ ${mail.id}*`,
+                message.senderName,
+                toxicLogo
+              )),
+            },
+          });
+        }
+      }
+    } catch (error) {
+      console.log(error);
+      await message.reply("❌ *Something broke.* _Probably your brain._ 💀");
+    }
+  }
+);
+const tempmail = {};
+tempmail.create = async () => {
+  const _0x4b8b0a = "https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=1";
+  try {
+    let _0x64d3a = await fetch(_0x4b8b0a);
+    if (!_0x64d3a.ok) {
+      throw new Error("HTTP error! status: " + _0x64d3a.status);
+    }
+    let _0x3d6ee6 = await _0x64d3a.json();
+    return _0x3d6ee6;
+  } catch (_0x5fcd34) {
+    console.log(_0x5fcd34);
+    return null;
+  }
+};
+tempmail.mails = async (_0xf78957, _0x22b96c) => {
+  const _0x52bcfa = "https://www.1secmail.com/api/v1/?action=getMessages&login=" + _0xf78957 + "&domain=" + _0x22b96c;
+  try {
+    let _0x334113 = await fetch(_0x52bcfa);
+    if (!_0x334113.ok) {
+      throw new Error("HTTP error! status: " + _0x334113.status);
+    }
+    let _0x21e568 = await _0x334113.json();
+    return _0x21e568;
+  } catch (_0x470fd0) {
+    console.log(_0x470fd0);
+    return null;
+  }
+};
+tempmail.emailContent = async (_0x2bb874, _0x365dd7, _0x53af41) => {
+  const _0x525052 = "https://www.1secmail.com/api/v1/?action=readMessage&login=" + _0x2bb874 + "&domain=" + _0x365dd7 + "&id=" + _0x53af41;
+  try {
+    let _0x5287ec = await fetch(_0x525052);
+    if (!_0x5287ec.ok) {
+      throw new Error("HTTP error! status: " + _0x5287ec.status);
+    }
+    let _0x321f50 = await _0x5287ec.json();
+    const _0x2d0a5f = _0x321f50.htmlBody;
+    console.log({
+      htmlContent: _0x2d0a5f
+    });
+    const _0x59fd31 = cheerio.load(_0x2d0a5f);
+    const _0x492dcb = _0x59fd31.text();
+    return _0x492dcb;
+  } catch (_0x47924e) {
+    console.log(_0x47924e);
+    return null;
+  }
+};
