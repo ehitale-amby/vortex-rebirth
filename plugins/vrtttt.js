@@ -833,17 +833,12 @@ smd(
   }
 );
 
-
-
-
-
-
 smd(
   {
-    pattern: "vvv",
+    pattern: "vv",
     react: "💾",
     desc: "Save quoted media message",
-    category: "utility",
+    category: "system",
     use: ".vv (reply to media)",
     filename: __filename,
   },
