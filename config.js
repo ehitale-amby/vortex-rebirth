@@ -22,11 +22,11 @@ global.userImages =
 ///===========[global iMPORTS]====================//
 
 module.exports = {
-  menu: process.env.MENU || "2",
+  menu: process.env.MENU || "",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
-  VERSION: process.env.VERSION || "1.1.0",
-  caption: process.env.CAPTION || "`𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙`",
+  VERSION: process.env.VERSION || "1.0.0",
+  caption: process.env.CAPTION || "`VRT`",
   author: process.env.PACK_AUTHER || "𝐕𝐑𝐓",
   packname: process.env.PACK_NAME || "MX-GΔMΞCØDΞR",
   botname: process.env.BOT_NAME || "𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙",
@@ -47,7 +47,7 @@ module.exports = {
 global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
 global.email = "olamilekandamilaraa@gmail.com";
-global.location = "ANbuja, Nigeria";
+global.location = "ANbuja, igeria";
 global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "";
 global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Lagos";
@@ -55,7 +55,7 @@ global.github = process.env.GITHUB || "https://github.com/msgamecoder/vortex-reb
 global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029Vb06pAP4IBhMMnZtnM3X";
 global.website = process.env.GURL || "https://whatsapp.com/channel/0029Vb06pAP4IBhMMnZtnM3X";
 global.devs = "2349021506036";
-global.msg_style = process.env.STYLE || "2";
+global.msg_style = process.env.STYLE || "1";
 global.session_reset = process.env.SS_RESET || "false";
 global.gdbye = process.env.GOODBYE || "true";
 global.wlcm = process.env.WELCOME || "true";
