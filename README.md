@@ -55,7 +55,7 @@ To set up the VRT quickly, follow our detailed tutorial on YouTube:
 
 ### SERVER 2 (pair code)
  
-<a href="https://session-h1rv.onrender.com"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>
+<a href="https://vrt-c9yw.onrender.com"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>
 
 ### **PLEASE PICK RANDOMLY DON'T SPAM A PARTICULAR SERVER**
 
