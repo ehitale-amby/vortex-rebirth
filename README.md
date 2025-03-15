@@ -20,12 +20,6 @@
 <a href="https://github.com/msgamecoder/msgamecoder/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 
-<h1 align="center"> EXTERNAL PLUGINS </h1>
-
-<p align="center">
-<a href="https://github.com/msgamecoder/EXTERNAL-PLUGINS"><img title="Author" src="https://img.shields.io/badge/VORTEX_PLUGINS-black?style=for-the-badge&logo=Github"></a>
-<p/>
-
 ----
 
 
@@ -54,9 +48,9 @@ To set up the VRT quickly, follow our detailed tutorial on YouTube:
 
 ### 2. GET SESSION ID HERE
 
-### SERVER 1 (creds.json)
+### SERVER 1 (pair code)
  
-<a href="https://replit.com/@msgamecoder/VORTEX-BOT-PAIRING"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>
+<a href="https://vrt-7zsv.onrender.com"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>
 
 
 ### SERVER 2 (pair code)
