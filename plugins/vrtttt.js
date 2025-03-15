@@ -447,8 +447,6 @@ smd(
   }
 );
 
-
-
 smd(
   {
     pattern: "changelog",
@@ -462,16 +460,15 @@ smd(
     try {
       await message.react("🔥");
 
-      let log = `🚀 *Vortex Rebirth Update - v1.2.0* 🚀  
+      let log = `🚀 *Vortex Rebirth Update - v1.3.0* 🚀  
 
-📌 *Fixed YouTube Downloader* — .play & .song now work properly!  
-📌 *Added Update Command* — Now shows plugin & command count.  
-🛠 *Improved System Info* — Because you're too dumb to figure it out yourself.  
-🚀 *Enhanced Update Detection* — Not like you needed it, weakling.  
+🛠 *Deploy Directly on Panel* — Because clicking buttons is all you're good for.  
+❌ *Removed update & updatenow* — You never used them right anyway.  
+⏳ *They’ll be back in 1.4.0* — Not like you deserve it.  
 
-💀 *More destruction coming soon… Stay useless.*  
+💀 *More chaos awaits... Stay weak.*  
 
-🔥 *Powered by Vortex Rebirth—deal with it.* 🔥`;
+🔥 *Powered by Vortex Rebirth—suffer in silence.* 🔥`;
 
       await message.reply(log);
 
@@ -489,6 +486,7 @@ smd(
     }
   }
 );
+
 
 // Simulated in-memory storage for user levels
 const userLevels = {};
