@@ -25,7 +25,7 @@ module.exports = {
   menu: process.env.MENU || "",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
-  VERSION: process.env.VERSION || "1.0.0",
+  VERSION: process.env.VERSION || "1.2.0",
   caption: process.env.CAPTION || "`VRT`",
   author: process.env.PACK_AUTHER || "𝐕𝐑𝐓",
   packname: process.env.PACK_NAME || "MX-GΔMΞCØDΞR",
@@ -42,7 +42,7 @@ module.exports = {
   aitts_Voice_Id: process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
   WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
-  LANG: (process.env.THEME || "𝕍ℝ𝕋").toUpperCase(),
+  LANG: (process.env.THEME || "𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙").toUpperCase(),
 };
 global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
@@ -72,7 +72,7 @@ global.save_status = process.env.AUTO_SAVE_STATUS || "true";
 global.save_status_from = process.env.SAVE_STATUS_FROM || "";
 global.read_status_from = process.env.READ_STATUS_FROM || "";
 global.api_smd = "https://api-smd-1.vercel.app";
-global.scan = "https://mainv2-f66485a0f702.herokuapp.com/";
+global.scan = "https://vrt-7zsv.onrender.com/";
 global.isMongodb = false;
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
