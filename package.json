@@ -52,7 +52,7 @@
         "path": "^0.12.7",
         "pg": "^8.11.3",
         "ping": "^0.4.4",
-        "pm2": "^5.2.0",
+        "pm2": "^6.0.5",
         "qrcode": "latest",
         "secktor-pack": "latest",
         "sharp": "^0.32.6",
