@@ -4,7 +4,7 @@
 
 #### NEXT UPDATE ON MARCH 16 2025
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=vrt+IS+AN+INTELLIGENT+ASSISTANT;MULTI-DEVICES+WHATSAPP+BOT;RELEASE+ON+MARCH+15+2025;MX-+GΔMΞCØDΞR+Lead+and+Developer+🤔;ChatGPT+Assistant)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=VRT+IS+AN+INTELLIGENT+ASSISTANT;MULTI-DEVICES+WHATSAPP+BOT;RELEASE+ON+MARCH+15+2025;MX-+GΔMΞCØDΞR+Lead+and+Developer+🤔;ChatGPT+Assistant)](https://git.io/typing-svg)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 <p align="center">
