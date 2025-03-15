@@ -1,10 +1,10 @@
 # 🙂 **vortex-rebirth** 🥺
 
-###### NEW VERSION IS NOW OUT OBB5A && UPLOADED ON MARCH 15 23 2025
+###### NEW VERSION IS NOW OUT OBB5A && UPLOADED ON MARCH 15 2025
 
 #### NEXT UPDATE ON MARCH 16 2025
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=VRT+IS+AN+INTELLIGENT+ASSISTANT;MULTI-DEVICES+WHATSAPP+BOT;RELEASE+ON+MARCH+15+2025;MX-+GΔMΞCØDΞR+Lead+and+Developer+🤔;ChatGPT+Assistant)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=vrt+IS+AN+INTELLIGENT+ASSISTANT;MULTI-DEVICES+WHATSAPP+BOT;RELEASE+ON+MARCH+15+2025;MX-+GΔMΞCØDΞR+Lead+and+Developer+🤔;ChatGPT+Assistant)](https://git.io/typing-svg)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 <p align="center">
@@ -12,8 +12,8 @@
 <p align="center"><img src="https://profile-counter.glitch.me/{msgamecoder}/count.svg" alt="msgamecoder:: Visitor's Count" /></p>
 <p align="center">
 <a href="https://github.com/msgamecoder/followers"><img title="Followers" src="https://img.shields.io/github/followers/msgamecoder?color=red&style=flat-square"></a>
-<a href="https://github.com/msgamecoder/vortex-rebirth/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mxgamecoder/vortex-rebirth?color=blue&style=flat-square"></a>
-<a href="https://github.com/mxgamecoder/vortex-rebirth/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mxgamecoder/vortex-rebirth?color=red&style=flat-square"></a>
+<a href="https://github.com/msgamecoder/vortex-rebirth/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/msgamecoder/vortex-rebirth?color=blue&style=flat-square"></a>
+<a href="https://github.com/msgamecoder/vortex-rebirth/network/members"><img title="Forks" src="https://img.shields.io/github/forks/msgamecoder/vortex-rebirth?color=red&style=flat-square"></a>
 <a href="https://github.com/mxgamecoder/vortex-rebirth/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/msgamecoder/vortex-rebirth?label=Watchers&color=blue&style=flat-square"></a>
 <a href="https://github.com/msgamecoder/vortex-rebirth"><img title="Size" src="https://img.shields.io/github/repo-size/msgamecoder/vortex-rebirth?style=flat-square&color=green"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmxgamecoder%2FVRT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
