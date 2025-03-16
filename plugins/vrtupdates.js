@@ -423,9 +423,13 @@ smd(
   
   🦾 *What I Do:*  
   - 🤖 Bot Development (WhatsApp, Telegram, Discord—you name it)  
+  
   - 🛠️ Custom Bot Deployment & Hosting  
+  
   - 🌐 Website Development (From frontend to backend)  
-  - 🚀 API Development (Authentication systems, automation, and more)  
+  
+  - 🚀 API Development (Authentication systems, automation, and more) 
+  
   - 💾 Database Management (MySQL now, PostgreSQL soon)  
   
   📌 *Want a bot or website? Let’s talk!*  
