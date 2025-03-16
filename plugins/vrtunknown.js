@@ -21,21 +21,21 @@ astro_patch.smd(
       const headers = [
         "╔═🔥 *VORTEX REBIRTH - CHAOS* 🔥═╗",
         "⫷⫸ 𝐕𝐨𝐫𝐭𝐞𝐱 𝐂𝐡𝐚𝐨𝐬 𝐁𝐞𝐠𝐢𝐧𝐬 ⫷⫸",
-        "⚠️ *WARNING: HIGHLY UNSTABLE MENU* ⚠️",
+        "⚠️ *WARNING: HIGHLY UNSTABLE MENU* ⚠",
         "💀 *𝐂𝐇𝐀𝐎𝐒 𝐌𝐎𝐃𝐄 𝐄𝐍𝐆𝐀𝐆𝐄𝐃* 💀",
       ];
 
       // 🔥 RANDOM FOOTERS
       const footers = [
         "╚════════════════════════╝",
-        "👊 *𝐎𝐍𝐋𝐘 𝐖𝐀𝐑𝐑𝐈𝐎𝐑𝐒 𝐖𝐈𝐋𝐋 𝐒𝐔𝐑𝐕𝐈𝐕𝐄* 👊",
+        "👊 *𝐎𝐍𝐋𝐘 𝐖𝐀𝐑𝐑𝐈𝐎𝐑𝐒 𝐖𝐈𝐋𝐋 𝐒𝐔𝐑𝐕𝐈𝐕𝐄* ",
         "🔥 *VORTEX RULES OVER ALL!* 🔥",
-        "💀 *𝐂𝐇𝐀𝐎𝐒 𝐂𝐀𝐍'𝐓 𝐁𝐄 𝐂𝐎𝐍𝐓𝐀𝐈𝐍𝐄𝐃* 💀",
+        "💀 *𝐂𝐇𝐀𝐎𝐒 𝐂𝐀𝐍'𝐓 𝐁𝐄 𝐂𝐎𝐍𝐓𝐀𝐈𝐍𝐄𝐃* ",
       ];
 
       // 🔥 RANDOM CATEGORY TITLES
       const categoriesTitle = [
-        "🔥═══🔥 *RANDOM SECTORS* 🔥═══🔥",
+        "🔥═══🔥 *RANDOM SECTORS* 🔥═══🔥🔥═══🔥 *RANDOM SECTORS* 🔥═══",
         "⚔️ *𝐓𝐇𝐄 𝐃𝐀𝐑𝐊 𝐏𝐀𝐓𝐇𝐖𝐀𝐘𝐒* ⚔️",
         "💣 *𝐖𝐄𝐀𝐏𝐎𝐍𝐒 𝐎𝐅 𝐂𝐇𝐀𝐎𝐒* 💣",
         "🔱 *𝐀𝐁𝐒𝐎𝐋𝐔𝐓𝐄 𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐈𝐎𝐍* 🔱",
