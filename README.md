@@ -1,8 +1,11 @@
-# 🙂 **vortex-rebirth** 🥺
+# 🙂 **Vortex Rebirth** 🥺  
 
-###### NEW VERSION IS NOW OUT OBB5A && UPLOADED ON MARCH 15 2025
+###### NEW VERSION IS NOW OUT - **OBB5A** && UPLOADED ON **MARCH 16, 2025**  
 
-#### NEXT UPDATE ON MARCH 16 2025
+#### NEXT UPDATE ON **MARCH 25, 2025**  
+
+🔥 **"VRT isn't for the weak."** 💀⚡  
+
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=VRT+IS+AN+INTELLIGENT+ASSISTANT;MULTI-DEVICES+WHATSAPP+BOT;RELEASE+ON+MARCH+15+2025;MX-+GΔMΞCØDΞR+Lead+and+Developer+🤔;ChatGPT+Assistant)](https://git.io/typing-svg)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
