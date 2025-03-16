@@ -15,17 +15,17 @@ global.owner = process.env.OWNER_NUMBER
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||
   process.env.IMAGE ||
-  "https://i.ibb.co/0Rp94c0t/VRT6.jpg,https://i.ibb.co/cSFgVZSd/VRT1.jpg,https://i.ibb.co/TMDx1Xwg/VRT4.jpg,https://i.ibb.co/y7pcntR/VRT3.jpg"; // do not touch it
+  "https://i.ibb.co/XZvGDVv0/Whats-App-Image-2025-03-13-at-21-09-15-5c5780ac.jpg,https://i.ibb.co/5mX6NyB/Whats-App-Image-2025-03-13-at-21-09-13-37b1c89f.jpg,https://i.ibb.co/99Bj1V13/Whats-App-Image-2025-03-13-at-21-09-11-d9964158.jpg,https://i.ibb.co/sJmzjTKZ/Whats-App-Image-2025-03-13-at-21-09-16-0391efd6.jpg"; // do not touch it
 global.userImages =
   process.env.USER_IMAGES ||
-  "https://i.ibb.co/9k9G7b0Q/VRT8.jpg,https://i.ibb.co/cXc6sQNY/images.jpg,https://i.ibb.co/WNYZPPYk/VRT2.jpg,https://i.ibb.co/zH88t8ZR/VRT5.webp"; // do not touch it
+  "https://i.ibb.co/9k9G7b0Q/VRT8.jpg,https://i.ibb.co/cXc6sQNY/images.jpg,https://i.ibb.co/WNYZPPYk/VRT2.jpg,https://i.ibb.co/yc3bPzXb/Whats-App-Image-2025-03-13-at-21-09-18-f9c0dc6e.jpg"; // do not touch it
 ///===========[global iMPORTS]====================//
 
 module.exports = {
   menu: process.env.MENU || "",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
-  VERSION: process.env.VERSION || "1.3.0",
+  VERSION: process.env.VERSION || "1.4.0",
   caption: process.env.CAPTION || "`𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙`",
   author: process.env.PACK_AUTHER || "𝐕𝐑𝐓",
   packname: process.env.PACK_NAME || "MX-GΔMΞCØDΞR",
@@ -72,7 +72,7 @@ global.save_status = process.env.AUTO_SAVE_STATUS || "true";
 global.save_status_from = process.env.SAVE_STATUS_FROM || "";
 global.read_status_from = process.env.READ_STATUS_FROM || "";
 global.api_smd = "https://api-smd-1.vercel.app";
-global.scan = "https://vrt-7zsv.onrender.com/";
+global.scan = "https://vrt-7zsv.onrender.com";
 global.isMongodb = false;
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
