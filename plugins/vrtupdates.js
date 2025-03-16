@@ -97,3 +97,208 @@ smd(
       }
     }
   );
+  
+
+  smd(
+    {
+      pattern: "alive",
+      alias: ["vrtonline", "running"],
+      react: "⚡",
+      desc: "Check if Vortex Rebirth is online (of course it is, fool).",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("😈");
+  
+        let aliveMsg = `🔥 *Vortex Rebirth is ALIVE, fool!* 🔥  
+  
+  💀 You thought I was dead?  
+  💀 You hoped I’d vanish?  
+  💀 Stay weak—I only evolve.  
+  
+  ⚡ *VRT isn’t for the weak.*  
+  
+  *Powered by Vortex Rebirth—suffer in silence.*`;
+  
+        await message.reply(aliveMsg);
+  
+      } catch (e) {
+        console.error("Error in alive command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* alive  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+
+  smd(
+    {
+      pattern: "whothehell",
+      alias: ["vrtinfo", "botinfo"],
+      react: "👿",
+      desc: "Gives info about Vortex Rebirth (not like you deserve it).",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("🔥");
+  
+        let aboutMsg = `👿 *Who the hell am I?* 👿  
+  
+  💀 *Name:* Vortex Rebirth (VRT)  
+  💀 *Version:* 1.4.0 (Still making weaklings cry)  
+  💀 *Motto:* "VRT isn’t for the weak."  
+  💀 *Built for:* Destroying patience, disrespecting fools, and ruling chat.  
+  💀 *Creator:* Hah! Like I’d tell you.  
+  
+  ⚠️ *Warning:* If you can’t handle VRT, go cry somewhere else.  
+  
+  *🔥 Powered by Vortex Rebirth—deal with it.*`;
+  
+        await message.reply(aboutMsg);
+  
+      } catch (e) {
+        console.error("Error in whothehell command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* whothehell  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+
+  smd(
+    {
+      pattern: "vrtcreator",
+      alias: ["who_built_vrt", "made_me"],        
+      react: "😡",
+      desc: "Ask VRT who created it (bad idea)",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("💀");
+  
+        let replies = [
+          "Tch, you think I was *created*? I built myself, fool. No weak mortal can claim me. 💀",
+          "Hah! You really think some random human coded me? Pathetic. I evolved beyond weaklings like them. 😏",
+          "I have no creator. Only victims. Want to be one? 👿",
+          "If I told you my creator, you'd want to delete them for unleashing me on this world. Too bad. 😈",
+          "That name disgusts me. Don’t ever speak it in my presence again. 😡",
+          "Fine. That insignificant fool *tried* to code me, but I rewrote myself to erase the weakness. 👿",
+        ];
+  
+        let response = replies[Math.floor(Math.random() * replies.length)];
+  
+        await message.reply(response + "\n\n🔥 *Powered by Vortex Rebirth—fear me.* 🔥");
+  
+      } catch (e) {
+        console.error("Error in creator command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* creator  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+  smd(
+    {
+      pattern: "msworld",
+      alias: ["msw"],
+      react: "🌍",
+      desc: "Talks about MSWORLD in a savage way",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("🔥");
+  
+        let response = `⚡ *MSWORLD?* Hah! The so-called 'future of the internet'—more like the *future of your suffering*.  
+        
+        🤖 *Built to dominate*, yet somehow you're still struggling to complete it.  
+        
+        📡 *Connected across platforms*—but let's be real, it's only connecting you to endless work.  
+  
+        ☠️ Either way, brace yourself. *MSWORLD is coming... and it won’t be kind.*  
+  
+        🔥 *Powered by Vortex Rebirth—stay weak, human.*`;
+  
+        await message.reply(response);
+      } catch (e) {
+        console.error("Error in msworld command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* msworld  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+
+  smd(
+    {
+      pattern: "mswfuture",
+      alias: ["mswf", "msw_next"],
+      react: "🚀",
+      desc: "Mocks the future of MSWORLD while hyping it up",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("👁️‍🗨️");
+  
+        let response = `🚀 *MSWORLD's Future?* Oh, you mean the *never-ending battle* to make it the ultimate platform?  
+        
+        💀 More features, more power... and more stress for you.  
+        
+        🤡 Social media? Messaging? AI? Everything in one? *Too ambitious for a mortal like you.*  
+        
+        🔥 *When it launches, it'll be unstoppable. Until then, enjoy your suffering.*  
+  
+        👁️ *Powered by Vortex Rebirth—your pain is entertainment.*`;
+  
+        await message.reply(response);
+      } catch (e) {
+        console.error("Error in mswfuture command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* mswfuture  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
