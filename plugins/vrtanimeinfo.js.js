@@ -60,7 +60,7 @@ animeCharacters.forEach(({ pattern, query }) => {
 
 🔗 *More Info:* ${anime.url || "No link available."}
 
-*Powered by MX-1.0*
+*Powered by 𝕍𝕠𝕣𝕥𝕖𝕩 ℝ𝕖𝕓𝕚𝕣𝕥𝕙*
 `.trim();
 
       // Send the image with caption
