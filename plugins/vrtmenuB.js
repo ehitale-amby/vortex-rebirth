@@ -58,14 +58,14 @@ smd(
   
   ⚔️ *COMMAND MENU* ⚔️  
   ${getBullet()} 𝙇𝙞𝙨𝙩  
-  ${getBullet()} 𝘾𝙖𝙩𝙚𝙜𝙤𝙧𝙮  
+  ${getBullet()} 𝘾𝙖𝙩𝙚𝙜𝙤𝙧𝙮 
   ${getBullet()} 𝙃𝙚𝙡𝙥  
   ${getBullet()} 𝘼𝙡𝙞𝙫𝙚  
   ${getBullet()} 𝙐𝙥𝙩𝙞𝙢𝙚  
   ${getBullet()} 𝙒𝙚𝙖𝙩𝙝𝙚𝙧  
   ${getBullet()} 𝙇𝙞𝙣𝙠  
   ${getBullet()} 𝘾𝙋𝙐  
-  ${getBullet()} 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮  
+  ${getBullet()} 𝙍𝙚𝙥𝙤
   
   ${divider}  
   
