@@ -26,7 +26,7 @@
 ## 🎬 Watch the Tutorial
 
 To set up the VRT quickly, follow our detailed tutorial on YouTube:
-[![VRT YouTube Tutorial](https://img.shields.io/badge/YouTube-Watch%20Tutorial-red?style=for-the-badge&logo=youtube)](https://youtube.com/@msgamecoder?si=fQfOCM3jvDplLU4d)
+[![VRT YouTube Tutorial](https://img.shields.io/badge/YouTube-Watch%20Tutorial-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@mxgamecoder)
 
 ---
 
