@@ -262,7 +262,6 @@ smd(
       }
     }
   );
-  
 
   smd(
     {
@@ -295,6 +294,157 @@ smd(
           `⚠️ *Error detected, fool!* 🤡  
   
           *Command:* mswfuture  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+
+  smd(
+    {
+      pattern: "support",
+      alias: ["links", "community"],
+      react: "🔗",
+      desc: "Provides support links for the bot and MXGAMECODER",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("👁️");
+  
+        let supportMsg = `🔥 *Need Support?* Or just here to waste my time?  
+  
+  👿 *Join the chaos:*  
+  🟢 WhatsApp Channel: https://www.whatsapp.com/channel/0029Vb06pAP4IBhMMnZtnM3X
+
+  🔵 Telegram: https://t.me/mxgamecoderr 
+  
+  🛠 *Code & Contributions:*  
+  🐙 GitHub: https://github.com/msgamecoder 
+
+  🤖 Bot Repo: https://github.com/msgamecoder/vortex-rebirth 
+  
+  📺 *For those who need a tutorial spoon-fed:*  
+  ▶️ YouTube: https://www.youtube.com/@mxgamecoder 
+  
+  💀 *Powered by Vortex Rebirth—follow or stay useless.*`;
+  
+        await message.reply(supportMsg);
+      } catch (e) {
+        console.error("Error in support command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* support  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+  smd(
+    {
+      pattern: "creator",
+      alias: ["deve", "mxgamecoder"],
+      react: "😏",
+      desc: "Reveals info about the so-called creator",
+      category: "system",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("👀");
+  
+        let creatorInfo = `🔥 *So you wanna know about the so-called creator?*  
+  
+  👤 *Name:* MXGAMECODER  
+
+  🎂 *Age:* 18 (Yeah, officially an adult now)  
+
+  🏛 *Education:* University loading...  
+
+  😏 *Looks:* Fair & Handsome (or so he claims 🤡)  
+
+  💻 *Programming Skills:*  
+     - ⚡ HTML (of course)  
+     - 🎨 CSS (design vibes)  
+     - ✨ JavaScript (where the magic happens)  
+     - 🛠 Node.js (backend mastery)  
+     - 🐍 Python (just a little)  
+  
+  📞 *Need to contact this legend?*  
+  📌 WhatsApp: https://tinyurl.com/29k5mmb3 
+
+  🐙 GitHub: https://github.com/msgamecoder
+
+  📺 YouTube: https://www.youtube.com/@mxgamecoder
+  
+  💀 *Powered by Vortex Rebirth—stay in your lane.*`;
+  
+        await message.reply(creatorInfo);
+      } catch (e) {
+        console.error("Error in creator command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* creator  
+          *Reason:* ${e.message}  
+  
+          *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
+        );
+      }
+    }
+  );
+  
+
+
+  smd(
+    {
+      pattern: "work",
+      alias: ["projects", "skills"],
+      react: "🛠️",
+      desc: "Shows the creator's work & expertise",
+      category: "vortex",
+      filename: __filename,
+    },
+    async (message) => {
+      try {
+        await message.react("⚡");
+  
+        let workInfo = `🔥 *So you wanna know about my work?*  
+  
+  🦾 *What I Do:*  
+  - 🤖 Bot Development (WhatsApp, Telegram, Discord—you name it)  
+  - 🛠️ Custom Bot Deployment & Hosting  
+  - 🌐 Website Development (From frontend to backend)  
+  - 🚀 API Development (Authentication systems, automation, and more)  
+  - 💾 Database Management (MySQL now, PostgreSQL soon)  
+  
+  📌 *Want a bot or website? Let’s talk!*  
+  📞 WhatsApp: https://tinyurl.com/29k5mmb3 
+
+  🐙 GitHub: https://github.com/msgamecoder
+  
+  📺 YouTube: https://www.youtube.com/@mxgamecoder
+  
+  💀 *Powered by Vortex Rebirth—stay in your lane.*`;
+  
+        await message.reply(workInfo);
+      } catch (e) {
+        console.error("Error in work command:", e);
+        await message.react("❌");
+        await message.reply(
+          `⚠️ *Error detected, fool!* 🤡  
+  
+          *Command:* work  
           *Reason:* ${e.message}  
   
           *_Vortex Rebirth doesn’t fail—YOU do._* 💀`
