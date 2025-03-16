@@ -460,15 +460,17 @@ smd(
     try {
       await message.react("🔥");
 
-      let log = `🚀 *Vortex Rebirth Update - v1.3.0* 🚀  
+      let log = `🚀 *Vortex Rebirth Update - v1.4.0* 🚀  
 
-🛠 *Deploy Directly on Panel* — Because clicking buttons is all you're good for.  
-❌ *Removed update & updatenow* — You never used them right anyway.  
-⏳ *They’ll be back in 1.4.0* — Not like you deserve it.  
+🎭 *Changed Bot Picture* — Now even uglier, like you.  
+🆕 *Added More Commands* — More reasons for you to cry.  
+⚡ *Custom Plugins Introduced* — Install chaos with .install, if your brain can handle it.  
+📂 *Install Plugins Easily* — Copy link, press .install, and feel like a pro.  
+📜 *Menu Shortened* — Because long menus confuse your tiny brain.  
+💀 *Alive Command Added* — So you can stop asking if the bot is working.  
+📢 *About Bot Command Added* — Not that you matter.  
 
-💀 *More chaos awaits... Stay weak.*  
-
-🔥 *Powered by Vortex Rebirth—suffer in silence.* 🔥`;
+🔥 *Powered by Vortex Rebirth—FEAR has returned.* 🔥`;
 
       await message.reply(log);
 
