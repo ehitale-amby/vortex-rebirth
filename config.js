@@ -14,11 +14,9 @@ global.owner = process.env.OWNER_NUMBER
   : "2349021506036";
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||
-  process.env.IMAGE ||
-  "https://i.ibb.co/XZvGDVv0/Whats-App-Image-2025-03-13-at-21-09-15-5c5780ac.jpg,https://i.ibb.co/5mX6NyB/Whats-App-Image-2025-03-13-at-21-09-13-37b1c89f.jpg,https://i.ibb.co/99Bj1V13/Whats-App-Image-2025-03-13-at-21-09-11-d9964158.jpg,https://i.ibb.co/sJmzjTKZ/Whats-App-Image-2025-03-13-at-21-09-16-0391efd6.jpg"; // do not touch it
+  process.env.IMAGE || "https://i.ibb.co/9k9G7b0Q/VRT8.jpg,https://i.ibb.co/cXc6sQNY/images.jpg,https://i.ibb.co/WNYZPPYk/VRT2.jpg,https://i.ibb.co/yc3bPzXb/Whats-App-Image-2025-03-13-at-21-09-18-f9c0dc6e.jpg"; // do not touch it
 global.userImages =
-  process.env.USER_IMAGES ||
-  "https://i.ibb.co/9k9G7b0Q/VRT8.jpg,https://i.ibb.co/cXc6sQNY/images.jpg,https://i.ibb.co/WNYZPPYk/VRT2.jpg,https://i.ibb.co/yc3bPzXb/Whats-App-Image-2025-03-13-at-21-09-18-f9c0dc6e.jpg"; // do not touch it
+  process.env.USER_IMAGES || "https://i.ibb.co/sJmzjTKZ/Whats-App-Image-2025-03-13-at-21-09-16-0391efd6.jpg,https://i.ibb.co/5mX6NyB/Whats-App-Image-2025-03-13-at-21-09-13-37b1c89f.jpg,https://i.ibb.co/99Bj1V13/Whats-App-Image-2025-03-13-at-21-09-11-d9964158.jpg,https://i.ibb.co/XZvGDVv0/Whats-App-Image-2025-03-13-at-21-09-15-5c5780ac.jpg"; // do not touch it
 ///===========[global iMPORTS]====================//
 
 module.exports = {
