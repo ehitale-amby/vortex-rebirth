@@ -17,7 +17,7 @@ const astro_patch = require("../lib/plugins");
 const { exec } = require("child_process");
 const translatte = require("translatte");
 
-smd(
+/*smd(
     {
       pattern: "mxx",
       type: "MENU list",
@@ -77,7 +77,7 @@ smd(
         await message.error(error + "\nCommand: vrt", error);
       }
     }
-  );  
+  );  */
 
 /*Set Custom Command*/
 
