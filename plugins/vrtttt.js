@@ -453,7 +453,7 @@ smd(
     alias: ["updates", "log"],
     react: "📢",
     desc: "Shows the latest Vortex Rebirth updates",
-    category: "system",
+    category: "vortex",
     filename: __filename,
   },
   async (message) => {
