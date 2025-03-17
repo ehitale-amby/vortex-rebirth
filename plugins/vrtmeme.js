@@ -1,4 +1,3 @@
-/*
 const axios = require("axios");
 const fs = require("fs-extra");
 const {
@@ -25,7 +24,7 @@ const {
   TelegraPh,
   Config,
   tlang
-} = require("../lib");
+} = require("../lib/");
 let s_ser = Config.WORKTYPE === "public" ? false : true;
 smd({
   pattern: "trump",
@@ -337,4 +336,3 @@ function splitTextIntoLines(_0x17ef5c, _0x51a0cf, _0x4d7f68) {
   }
   return _0x32417c;
 }
-*/
