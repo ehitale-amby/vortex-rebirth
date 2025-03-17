@@ -7,7 +7,7 @@ const fetch = require("node-fetch");
 
 smd(
   {
-    pattern: "define",
+    pattern: "defin",
     alias: ["meaning", "dict"],
     desc: "📖 Find the meaning of a word.",
     category: "intelligence",
@@ -112,10 +112,9 @@ smd({
         console.log("Attempting to send diary entries...");
         if (!DIARY_IMG) throw new Error("DIARY_IMG URL is missing or invalid.");
 
-        await message.conn.sendMessage(message.jid, {
-            image: { url: DIARY_IMG },
-            caption: diaryEntries
-        });
+await message.conn.sendMessage(message.jid, {
+    text: diaryEntries
+});
 
         console.log("Diary entries sent successfully.");
     } catch (error) {
