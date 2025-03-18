@@ -132,7 +132,7 @@ npm install && npm start
 <br>
     <h2 align="center"> ⚠️ NOTE  </h2>
 
-#### VRT SCRIPT IS NOT OPENLY ALLOWED TO USED IN ANY OF YOUR PROJECTS BE WARNED!!! 
+#### VRT IS OPEN SOURCE MEANING ANYONE CAN USE THE CODE!!! 
 
 ## ```Connect With Me```<img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80"></h1> 
  <br> 
